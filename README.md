@@ -1,5 +1,6 @@
 # WP CSS Javascript Code
 
+https://wordpress.org/plugins/wp-css-and-js-code/
 Insert CSS and Javascript on specific posts or page or you can do it in global, you can insert also Header and Footer in global settings. This is perfect for customizing CSS specially when you are adding CSS responsive codes.
 
 
