@@ -31,26 +31,19 @@ function WPCSSJSCODE_optimize_output($buffer) {
 function WPCSSJSCODE_inject_header ( ) {
 
     // ----- STYLES -------
-    // global prioritize
+    // global and specific
     $default_global = get_post_meta( 1, "_WPCSSJSCODE_css_default_code_global", true );
-    if( $default_global ) {
-        ob_start();
-        ?>
-        <style type="text/css" id="wp-css-javascript-html-csshead-output-global"><?php echo $default_global; ?></style>
-        <?php
-        $cssheadoutputglobal = ob_get_clean();
-        echo WPCSSJSCODE_optimize_output($cssheadoutputglobal);
-    }
-
-    // for specifics
     $default = get_post_meta( get_the_ID(), "_WPCSSJSCODE_css_default_code", true );
-    if( $default ) {
+    if( $default_global || $default ) {
         ob_start();
         ?>
-        <style type="text/css" id="wp-css-javascript-html-csshead-output-specific"><?php echo $default; ?></style>
+        <style type="text/css" id="wp-css-javascript-html-cssoutput">
+            <?php echo $default_global ? $default_global : ''; ?>
+            <?php echo $default ? $default : ''; ?>
+        </style>
         <?php
-        $cssheadoutput = ob_get_clean();
-        echo WPCSSJSCODE_optimize_output($cssheadoutput);
+        $cssoutput = ob_get_clean();
+        echo WPCSSJSCODE_optimize_output($cssoutput);
     }
     // ------ END OF STYLES --------
 
@@ -73,23 +66,16 @@ function WPCSSJSCODE_inject_header ( ) {
 
 
     // ----- SCRIPTS -------
-    // global prioritize
+    // global and specific
     $jshead_global = get_post_meta( 1, "_WPCSSJSCODE_js_code_header_global", true );
-    if( $jshead_global ) {
-        ob_start();
-        ?>
-        <script type="text/javascript" id="wp-css-javascript-html-jshead-output-global"><?php echo $jshead_global; ?></script>
-        <?php
-        $jsheadoutputglobal = ob_get_clean();
-        echo WPCSSJSCODE_optimize_output($jsheadoutputglobal);
-    }
-
-    // for specifics
     $jshead = get_post_meta( get_the_ID(), "_WPCSSJSCODE_js_code_header", true );
-    if( $jshead ) {
+    if( $jshead_global || $jshead ) {
         ob_start();
         ?>
-        <script type="text/javascript" id="wp-css-javascript-html-jshead-output-specific"><?php echo $jshead; ?></script>
+        <script type="text/javascript" id="wp-css-javascript-html-jshead">
+            <?php echo $jshead_global ? $jshead_global : ''; ?>
+            <?php echo $jshead ? $jshead : ''; ?>
+        </script>
         <?php
         $jsheadoutput = ob_get_clean();
         echo WPCSSJSCODE_optimize_output($jsheadoutput);
@@ -121,23 +107,16 @@ function WPCSSJSCODE_inject_footer ( ) {
 
     
     // --- SCRIPTS ---
-    // global prioritize
+    // global and specific
     $script_global = get_post_meta( 1, "_WPCSSJSCODE_js_code_footer_global", true );
-    if( $script_global ) {
-        ob_start();
-        ?>
-        <script type="text/javascript" id="wp-css-javascript-html-jsfooter-output-global"><?php echo $script_global; ?></script>
-        <?php
-        $jsfooteroutputglobal = ob_get_clean();
-        echo WPCSSJSCODE_optimize_output($jsfooteroutputglobal);
-    }
-
-    // for specific
     $script = get_post_meta( get_the_ID(), "_WPCSSJSCODE_js_code", true );
-    if( $script ) {
+    if( $script_global || $script ) {
         ob_start();
         ?>
-        <script type="text/javascript" id="wp-css-javascript-html-jsfooter-output-specific"><?php echo $script; ?></script>
+        <script type="text/javascript" id="wp-css-javascript-html-jsfooter">
+            <?php echo $script_global ? $script_global : ''; ?>
+            <?php echo $script ? $script : ''; ?>
+        </script>
         <?php
         $jsfooteroutput = ob_get_clean();
         echo WPCSSJSCODE_optimize_output($jsfooteroutput);

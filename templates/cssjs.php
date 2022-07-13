@@ -6,7 +6,7 @@
 <div class="separator_">
 <form id="WPCSSJSCODE_code_form">
 <h4>Insert HTML before &lt;body&gt; tag</h4>
-<input type="hidden" value="1" name="post_id" />
+<input type="hidden" value="<?= $postid ?>" name="post_id" />
 <input type="hidden" value="_WPCSSJSCODE_specific_html_before_body" name="meta_key" />
 <textarea name="wp_css_js_code" placeholder="Insert your custom HTML code" class="_wp_css_default_code WPCSSJSCODE_HTML" rows="10" style="width: 100%;"><?=WPCSSJSCODE_POSTMETA_GET( $postid, "_WPCSSJSCODE_specific_html_before_body" )?></textarea>
 <input type="hidden" name="nonce" value="<?php echo wp_create_nonce("wp-css-js-code-nonce") ?>" />
@@ -19,7 +19,7 @@
 <div class="separator_">
 <form id="WPCSSJSCODE_code_form">
 <h4>Insert HTML after &lt;body&gt; tag</h4>
-<input type="hidden" value="1" name="post_id" />
+<input type="hidden" value="<?= $postid ?>" name="post_id" />
 <input type="hidden" value="_WPCSSJSCODE_specific_html_after_body" name="meta_key" />
 <textarea name="wp_css_js_code" placeholder="Insert your custom HTML code" class="_wp_css_default_code WPCSSJSCODE_HTML" rows="10" style="width: 100%;"><?=WPCSSJSCODE_POSTMETA_GET( $postid, "_WPCSSJSCODE_specific_html_after_body" )?></textarea>
 <input type="hidden" name="nonce" value="<?php echo wp_create_nonce("wp-css-js-code-nonce") ?>" />
@@ -32,7 +32,7 @@
 <div class="separator_">
 <form id="WPCSSJSCODE_code_form">
 <h4>Insert HTML in FOOTER</h4>
-<input type="hidden" value="1" name="post_id" />
+<input type="hidden" value="<?= $postid ?>" name="post_id" />
 <input type="hidden" value="_WPCSSJSCODE_specific_html_footer" name="meta_key" />
 <textarea name="wp_css_js_code" placeholder="Insert your custom HTML code" class="_wp_css_default_code WPCSSJSCODE_HTML" rows="10" style="width: 100%;"><?=WPCSSJSCODE_POSTMETA_GET( $postid, "_WPCSSJSCODE_specific_html_footer" )?></textarea>
 <input type="hidden" name="nonce" value="<?php echo wp_create_nonce("wp-css-js-code-nonce") ?>" />

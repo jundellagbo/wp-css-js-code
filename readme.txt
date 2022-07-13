@@ -19,7 +19,7 @@ You can insert them in Header or Footer.
 = Features =
 * Text editor with syntax highlighting
 * Code validation
-* Minified Output
+* Minified Output | Inline CSS AND JS
 * Custom CSS and Javascript on specific post or global
 * Custom HTML on specific post or global
 * Custom HTML before body tag specific post or global
@@ -35,6 +35,10 @@ You can insert them in Header or Footer.
 * [Jundell Agbo](https://profiles.wordpress.org/jundellagbo/)
 
 == Changelog ==
+
+= 2.2.1
+* fix specific post/page insert html
+* combine css and javascript
 
 = 2.0.0
 * supports shortcode
