@@ -94,7 +94,7 @@ function WPCSSJSCODE_inject_footer ( ) {
     // global prioritize
     $insert_footer_global = get_post_meta( 1, "_WPCSSJSCODE_code_global_footer", true );
     if( $insert_footer_global ) {
-        echo WPCSSJSCODE_optimize_output($insert_header_global);
+        echo WPCSSJSCODE_optimize_output($insert_footer_global);
     }
 
     // for specific

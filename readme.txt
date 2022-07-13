@@ -21,8 +21,7 @@ You can insert them in Header or Footer.
 * Code validation
 * Minified Output | Inline CSS AND JS
 * Custom CSS and Javascript on specific post or global
-* Custom HTML on specific post or global
-* Custom HTML before body tag specific post or global
+* Custom HTML before|after body tag and footer specific post or global
 * Theme Editor Preference
 * Shortcode contents supported
 
@@ -35,6 +34,9 @@ You can insert them in Header or Footer.
 * [Jundell Agbo](https://profiles.wordpress.org/jundellagbo/)
 
 == Changelog ==
+
+= 2.2.2
+* fix footer inject bug issue
 
 = 2.2.1
 * fix specific post/page insert html
