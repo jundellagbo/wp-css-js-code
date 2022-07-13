@@ -6,7 +6,7 @@
 Plugin Name:  WP CSS, Javascript and HTML
 Plugin URI:   https://wordpress.org/plugins/wp-css-js-code/
 Description:  Custom CSS, Javascript and HTML on specific posts or page or you can do it in global.
-Version:      2.0.0
+Version:      2.2.0
 Author:       Jundell Agbo
 Author URI:   https://profiles.wordpress.org/jundellagbo/#content-plugins
 License:      GPLv2 or later
