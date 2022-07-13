@@ -1,6 +1,6 @@
 === WP CSS, Javascript and HTML ===
 Contributors: jundellagbo
-Tags: css, javascript, minify, js, insert header, insert footer
+Tags: css, javascript, minify, js, html, header, footer, body
 Donate link: https://www.paypal.me/jundellagbo
 Requires at least: 5.1
 Tested up to: 6.0
