@@ -1,0 +1,19 @@
+.wp_css_js_code_btn { margin-top: 15px!important; }
+.separator_ { margin: 15px 0; padding: 15px; background-color: #f3f3f3; }
+.wp_css_js_minify { margin-top: 15px!important; margin-left: 10px!important; }
+.wp_css_js_globals .separator_ { background-color: #ffffff!important; }
+
+.CodeMirror { resize: vertical; }
+
+.wp_css_js_alert {
+    background: #238636;
+    padding: 5px 20px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 20px 0; 
+}
+
+.wp_css_js_alert a {
+    color: #ffffff;
+}
