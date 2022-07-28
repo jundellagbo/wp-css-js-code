@@ -7,7 +7,7 @@ Custom CSS, Javascript and HTML on specific posts or page or you can do it in gl
 ### Features
 * Text editor with syntax highlighting
 * Code validation
-* Minified Output | Inline CSS AND JS
+* Inlined CSS AND JS
 * Custom CSS and Javascript on specific post or global
 * Custom HTML before|after body tag and footer specific post or global
 * Theme Editor Preference
